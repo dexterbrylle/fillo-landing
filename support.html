@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fillo Support — Car Expense Tracker for iPhone</title>
+  <title>Fillo Support | Car Expense Tracker for iPhone</title>
   <meta name="description" content="Answers about Fillo: data storage, accounts, subscriptions, offline use, backups, CSV export, deleting data, supported devices, and how to report a problem.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="application-name" content="Fillo">
   <link rel="canonical" href="https://fillo.dexterbrylle.com/support">
 
   <meta property="og:type" content="website">
@@ -14,7 +16,15 @@
   <meta property="og:description" content="Answers about data storage, backups, exports, deleting data, and supported devices.">
   <meta property="og:url" content="https://fillo.dexterbrylle.com/support">
   <meta property="og:image" content="https://fillo.dexterbrylle.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fillo social preview showing the app icon, the Cost Ahead screen, and the message Keep every car cost close.">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fillo Support">
+  <meta name="twitter:description" content="Answers about data storage, backups, exports, deleting data, and supported devices.">
+  <meta name="twitter:image" content="https://fillo.dexterbrylle.com/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Fillo social preview showing the app icon, the Cost Ahead screen, and the message Keep every car cost close.">
 
   <link rel="icon" type="image/png" sizes="48x48" href="assets/img/icon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
@@ -39,11 +49,22 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://fillo.dexterbrylle.com/support#faq",
+    "url": "https://fillo.dexterbrylle.com/support",
+    "name": "Fillo Support",
+    "description": "Answers about Fillo data storage, accounts, subscriptions, offline use, backups, CSV export, deleting data, supported devices, and support contact.",
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://fillo.dexterbrylle.com/#website",
+      "name": "Fillo",
+      "url": "https://fillo.dexterbrylle.com/"
+    },
+    "inLanguage": "en",
     "mainEntity": [
       {
         "@type": "Question",
         "name": "Where is my data stored?",
-        "acceptedAnswer": { "@type": "Answer", "text": "On your device. Fillo keeps the live Garage — records, attachments, and automatic backups — in the app's local storage on your iPhone or iPad. Fillo runs no servers. If you enable iCloud Device Backup in iOS settings, Apple may include Fillo's app data in that device backup; Fillo itself does not run a cloud service." }
+        "acceptedAnswer": { "@type": "Answer", "text": "On your device. Fillo keeps the live Garage, including records, attachments, and automatic backups, in the app's local storage on your iPhone or iPad. Fillo runs no servers. If you enable iCloud Device Backup in iOS settings, Apple may include Fillo's app data in that device backup; Fillo itself does not run a cloud service." }
       },
       {
         "@type": "Question",
@@ -73,22 +94,22 @@
       {
         "@type": "Question",
         "name": "How do I record an expense or service?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Use Quick Log on Home — typed or dictated — which produces a draft you review before saving, or add a record directly: fuel-ups with odometer, quantity, and price; charging sessions; maintenance; and ownership expenses such as insurance, registration, repairs, parking, tolls, and financing. You can attach a receipt, photo, scan, or PDF to any record." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Use Quick Log on Home, typed or dictated, which produces a draft you review before saving, or add a record directly: fuel-ups with odometer, quantity, and price; charging sessions; maintenance; and ownership expenses such as insurance, registration, repairs, parking, tolls, and financing. You can attach a receipt, photo, scan, or PDF to any record." }
       },
       {
         "@type": "Question",
         "name": "How does Cost Ahead work?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Cost Ahead estimates the next 30, 90, and 365 days from your saved history, confirmed maintenance intervals, recurring expenses, and document renewals. Reminders can be set by date, odometer, or both, and estimated due dates are clearly labeled. Every calculation is deterministic — Fillo does not predict mechanical failures or use market data." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Cost Ahead estimates the next 30, 90, and 365 days from your saved history, confirmed maintenance intervals, recurring expenses, and document renewals. Reminders can be set by date, odometer, or both, and estimated due dates are clearly labeled. Every calculation is deterministic; Fillo does not predict mechanical failures or use market data." }
       },
       {
         "@type": "Question",
         "name": "Can I export, back up, or restore my data?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. A Fillo Backup is a complete, restorable archive — with an optional password — that you can save to On My iPhone, iCloud Drive, or another Files provider, and restore from a Files provider. Fillo also keeps up to seven automatic daily backups inside the app container. CSV export moves editable records out; CSV import accepts official versioned Fillo templates. Attachments are included in backups; CSV export does not include attachment content." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. A Fillo Backup is a complete, restorable archive with an optional password that you can save to On My iPhone, iCloud Drive, or another Files provider, and restore from a Files provider. Fillo also keeps up to seven automatic daily backups inside the app container. CSV export moves editable records out; CSV import accepts official versioned Fillo templates. Attachments are included in backups; CSV export does not include attachment content." }
       },
       {
         "@type": "Question",
         "name": "How do I delete my data?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Delete individual records or an entire car from inside the app. Deleted items stay in Recently Deleted for 30 days, then are permanently purged. Deleting the Fillo app removes its local storage — and because Fillo runs no servers, no copy of your records remains with Fillo." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Delete individual records or an entire car from inside the app. Deleted items stay in Recently Deleted for 30 days, then are permanently purged. Deleting the Fillo app removes its local storage, and because Fillo runs no servers, no copy of your records remains with Fillo." }
       },
       {
         "@type": "Question",
@@ -144,7 +165,7 @@
         <details>
           <summary>Where is my data stored?</summary>
           <div class="faq-a">
-            <p>On your device. Fillo keeps the live Garage — records, attachments, and automatic backups — in the app’s local storage on your iPhone or iPad. Fillo runs no servers.</p>
+            <p>On your device. Fillo keeps the live Garage, including records, attachments, and automatic backups, in the app’s local storage on your iPhone or iPad. Fillo runs no servers.</p>
             <p>If you enable iCloud Device Backup in iOS settings, Apple may include Fillo’s app data in that device backup. Fillo itself does not run a cloud service and does not control Apple’s backup result.</p>
           </div>
         </details>
@@ -175,7 +196,7 @@
           <summary>Can I use Fillo without an internet connection?</summary>
           <div class="faq-a">
             <p>Yes. Fillo is offline by design. Reading, creating, editing, deleting, calculating, reminders with local notifications, backups, exports, and the Vehicle Passport all work without a network connection.</p>
-            <p>Sharing an export through Mail, AirDrop, or Messages uses the iOS features you already have configured — Fillo sends nothing on its own.</p>
+            <p>Sharing an export through Mail, AirDrop, or Messages uses the iOS features you already have configured. Fillo sends nothing on its own.</p>
           </div>
         </details>
 
@@ -192,10 +213,10 @@
           <div class="faq-a">
             <p>Two ways:</p>
             <ul>
-              <li><strong>Quick Log</strong> on Home — type or dictate a short sentence and review the draft before saving.</li>
-              <li><strong>Direct entry</strong> — fuel-ups with odometer, quantity, unit price, and total; charging sessions; maintenance; and ownership expenses such as insurance, registration, repairs, parking, tolls, accessories, and financing.</li>
+              <li><strong>Quick Log</strong> on Home: type or dictate a short sentence and review the draft before saving.</li>
+              <li><strong>Direct entry</strong>: fuel-ups with odometer, quantity, unit price, and total; charging sessions; maintenance; and ownership expenses such as insurance, registration, repairs, parking, tolls, accessories, and financing.</li>
             </ul>
-            <p>You can attach a receipt, photo, scan, or PDF to a record, and running totals stay separated by currency — Fillo never combines money from different currencies.</p>
+            <p>You can attach a receipt, photo, scan, or PDF to a record, and running totals stay separated by currency. Fillo never combines money from different currencies.</p>
           </div>
         </details>
 
@@ -203,7 +224,7 @@
           <summary>How does Cost Ahead work?</summary>
           <div class="faq-a">
             <p>Cost Ahead estimates the next 30, 90, and 365 days from your saved history, confirmed maintenance intervals, recurring expenses, and document renewals.</p>
-            <p>Reminders can be set by date, odometer, or both — whichever comes first makes the item due. Estimated due dates are always clearly labeled. Fillo’s calculations are deterministic: it does not predict mechanical failures, and it does not use market data.</p>
+            <p>Reminders can be set by date, odometer, or both. Whichever comes first makes the item due. Estimated due dates are always clearly labeled. Fillo’s calculations are deterministic: it does not predict mechanical failures, and it does not use market data.</p>
           </div>
         </details>
 
@@ -212,8 +233,8 @@
           <div class="faq-a">
             <p>Yes.</p>
             <ul>
-              <li><strong>Fillo Backup</strong> is a complete, restorable archive — with an optional password — that you can save to On My iPhone, iCloud Drive, or another Files provider, and later restore from a Files provider.</li>
-              <li><strong>Automatic backups</strong> — Fillo keeps up to seven daily backups inside the app container. These are removed if you delete the app.</li>
+              <li><strong>Fillo Backup</strong> is a complete, restorable archive with an optional password that you can save to On My iPhone, iCloud Drive, or another Files provider, and later restore from a Files provider.</li>
+              <li><strong>Automatic backups</strong>: Fillo keeps up to seven daily backups inside the app container. These are removed if you delete the app.</li>
               <li><strong>CSV export</strong> moves editable records out for analysis or recordkeeping. <strong>CSV import</strong> accepts official versioned Fillo templates.</li>
             </ul>
             <p>Attachments are included in backups. CSV export does not include attachment content.</p>
@@ -232,7 +253,7 @@
           <summary>Which devices and iOS versions are supported?</summary>
           <div class="faq-a">
             <p>Fillo runs on iPhone and iPad and requires iOS 18.0 or later. Home Screen widgets, Shortcuts, and Quick Log are included.</p>
-            <p>Fillo is designed to stay useful when notifications, biometrics, iCloud, or Mail are unavailable — those are optional conveniences, not requirements.</p>
+            <p>Fillo is designed to stay useful when notifications, biometrics, iCloud, or Mail are unavailable. Those are optional conveniences, not requirements.</p>
           </div>
         </details>
 

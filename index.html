@@ -4,19 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Fillo — Know what your car will cost next</title>
+  <title>Fillo | Know what your car will cost next</title>
   <meta name="description" content="Fillo puts fuel, charging, maintenance, expenses, documents, and upcoming costs in one place, privately on your iPhone. Paid once. No account. No subscription. Offline.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="application-name" content="Fillo">
   <link rel="canonical" href="https://fillo.dexterbrylle.com/">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Fillo">
-  <meta property="og:title" content="Fillo — Know what your car will cost next">
+  <meta property="og:title" content="Fillo | Know what your car will cost next">
   <meta property="og:description" content="Fuel, charging, maintenance, documents, and upcoming costs, in one place, privately on your iPhone.">
   <meta property="og:url" content="https://fillo.dexterbrylle.com/">
   <meta property="og:image" content="https://fillo.dexterbrylle.com/assets/img/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fillo social preview showing the app icon, the Cost Ahead screen, and the message Keep every car cost close.">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fillo | Know what your car will cost next">
+  <meta name="twitter:description" content="Fuel, charging, maintenance, documents, and upcoming costs, in one place, privately on your iPhone.">
+  <meta name="twitter:image" content="https://fillo.dexterbrylle.com/assets/img/og-image.png">
+  <meta name="twitter:image:alt" content="Fillo social preview showing the app icon, the Cost Ahead screen, and the message Keep every car cost close.">
 
   <link rel="icon" type="image/png" sizes="48x48" href="assets/img/icon-48.png">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
@@ -42,12 +50,58 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Fillo: Car Expense Tracker",
-    "operatingSystem": "iOS",
-    "applicationCategory": "FinanceApplication",
-    "description": "Paid, offline iPhone app for personal car ownership. Fillo keeps fuel, charging, maintenance, expenses, documents, reminders, forecasts, and ownership history on the device.",
-    "featureList": "Cost Ahead estimates, Vehicle Passport PDF, Glovebox documents, Fillo Backup, CSV import and export, Privacy Lock"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://fillo.dexterbrylle.com/#website",
+        "name": "Fillo",
+        "url": "https://fillo.dexterbrylle.com/",
+        "inLanguage": "en",
+        "description": "Fillo is a private car expense tracker for iPhone and iPad."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://fillo.dexterbrylle.com/#webpage",
+        "url": "https://fillo.dexterbrylle.com/",
+        "name": "Fillo | Know what your car will cost next",
+        "description": "Fillo puts fuel, charging, maintenance, expenses, documents, and upcoming costs in one place, privately on your iPhone. Paid once. No account. No subscription. Offline.",
+        "isPartOf": { "@id": "https://fillo.dexterbrylle.com/#website" },
+        "mainEntity": { "@id": "https://fillo.dexterbrylle.com/#app" },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://fillo.dexterbrylle.com/assets/img/og-image.png",
+          "width": 1200,
+          "height": 630
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://fillo.dexterbrylle.com/#app",
+        "name": "Fillo: Car Expense Tracker",
+        "alternateName": "Fillo",
+        "url": "https://fillo.dexterbrylle.com/",
+        "image": "https://fillo.dexterbrylle.com/assets/img/og-image.png",
+        "screenshot": [
+          "https://fillo.dexterbrylle.com/assets/img/screenshots/dashboard.webp",
+          "https://fillo.dexterbrylle.com/assets/img/screenshots/cost-ahead.webp",
+          "https://fillo.dexterbrylle.com/assets/img/screenshots/vehicle-passport.webp"
+        ],
+        "operatingSystem": "iOS 18.0 or later",
+        "applicationCategory": "FinanceApplication",
+        "applicationSubCategory": "Car expense tracker",
+        "description": "Paid, offline iPhone and iPad app for personal car ownership. Fillo keeps fuel, charging, maintenance, expenses, documents, reminders, forecasts, and ownership history on the device.",
+        "featureList": [
+          "Cost Ahead estimates",
+          "Vehicle Passport PDF",
+          "Glovebox documents",
+          "Fillo Backup",
+          "CSV import and export",
+          "Privacy Lock"
+        ],
+        "inLanguage": "en"
+      }
+    ]
   }
   </script>
 </head>
@@ -352,7 +406,7 @@
                so the site has no dead or deceptive CTA. -->
           <span class="btn btn-pending"><svg class="cta-icon" aria-hidden="true" focusable="false" width="15" height="15"><use href="#icon-appstore"/></svg> Fillo on App Store <span class="at-launch-tag">At launch</span></span>
         </div>
-        <p class="purchase-price">One-time purchase — price announced at launch</p>
+        <p class="purchase-price">One-time purchase; price announced at launch</p>
         <p class="purchase-soon">Fillo launches on the App Store for iPhone and iPad. This becomes a download link the moment the listing is live.</p>
       </div>
     </section>

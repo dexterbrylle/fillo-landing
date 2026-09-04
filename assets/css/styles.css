@@ -489,13 +489,11 @@ a { color: var(--primary-dark); text-underline-offset: 3px; }
   content: "";
   position: absolute;
   left: 0;
-  top: 0.42em;
+  top: 0.34em;
   width: 18px;
-  height: 10px;
-  border-left: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
-  transform: rotate(-45deg);
-  border-radius: 1px;
+  height: 14px;
+  background: var(--primary);
+  clip-path: polygon(14% 48%, 37% 70%, 86% 16%, 100% 30%, 38% 96%, 0 58%);
 }
 
 /* The accumulation figure: always readable as static markup. JS may animate
