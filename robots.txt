@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Preview/staging deployments should return X-Robots-Tag: noindex at the host
+# (or serve this file with "Disallow: /") so only the production site is indexed.
+# Production domain: https://fillo.dexterbrylle.com
+Sitemap: https://fillo.dexterbrylle.com/sitemap.xml

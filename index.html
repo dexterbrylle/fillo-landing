@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Fillo — Know what your car will cost next</title>
+  <meta name="description" content="Fillo puts fuel, charging, maintenance, expenses, documents, and upcoming costs in one place, privately on your iPhone. Paid once. No account. No subscription. Offline.">
+  <link rel="canonical" href="https://fillo.dexterbrylle.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fillo">
+  <meta property="og:title" content="Fillo — Know what your car will cost next">
+  <meta property="og:description" content="Fuel, charging, maintenance, documents, and upcoming costs, in one place, privately on your iPhone.">
+  <meta property="og:url" content="https://fillo.dexterbrylle.com/">
+  <meta property="og:image" content="https://fillo.dexterbrylle.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/icon-48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icon-16.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <meta name="theme-color" content="#F7FBF9">
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <noscript>
+    <style>
+      .demo-tabs { display: none; }
+      .demo-panel { display: block !important; margin-bottom: 40px; }
+      /* Without main.js the Menu toggle is dead, so the links render
+         inline in a static header instead of hiding behind it. */
+      @media (max-width: 820px) {
+        .site-nav { position: static; height: auto; }
+        .nav-inner { display: block; }
+        .nav-toggle { display: none; }
+        .nav-links { display: block; position: static; box-shadow: none; }
+      }
+    </style>
+  </noscript>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Fillo: Car Expense Tracker",
+    "operatingSystem": "iOS",
+    "applicationCategory": "FinanceApplication",
+    "description": "Paid, offline iPhone app for personal car ownership. Fillo keeps fuel, charging, maintenance, expenses, documents, reminders, forecasts, and ownership history on the device.",
+    "featureList": "Cost Ahead estimates, Vehicle Passport PDF, Glovebox documents, Fillo Backup, CSV import and export, Privacy Lock"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false"><symbol id="icon-appstore" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></symbol></svg>
+
+  <header class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/img/icon-48.png" alt="" width="30" height="30"> Fillo
+      </a>
+      <nav id="site-menu" class="nav-links" aria-label="Main navigation">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li class="nav-cta">
+            <!-- PUBLISHING BLOCKER: no public App Store URL exists yet.
+                 When it does, replace this anchor with the store listing URL and
+                 the label with “Download on the App Store” on this page and in
+                 the footer of support.html and privacy.html. -->
+            <a class="btn btn-primary" href="#get"><svg class="cta-icon" aria-hidden="true" focusable="false" width="15" height="15"><use href="#icon-appstore"/></svg> Fillo on App Store</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+    </div>
+  </header>
+
+  <a class="mobile-cta" href="#get">
+    <span>Fillo on App Store</span>
+    <span class="at-launch-tag">At launch</span>
+  </a>
+
+  <main id="main">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-layer hero-blob b1" data-parallax="0.12" aria-hidden="true"></div>
+      <div class="hero-layer hero-blob b2" data-parallax="0.22" aria-hidden="true"></div>
+      <div class="hero-layer hero-road" data-parallax="0.05" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Your car’s story, kept close</p>
+          <h1 id="hero-title">Know what your car will cost&nbsp;next.</h1>
+          <p class="lede">Fillo puts fuel, charging, maintenance, expenses, documents, and upcoming costs in one place, privately on your iPhone.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#get"><svg class="cta-icon" aria-hidden="true" focusable="false" width="15" height="15"><use href="#icon-appstore"/></svg> Fillo on App Store</a>
+            <a class="btn btn-ghost" href="#features">See how it works</a>
+          </div>
+          <ul class="hero-facts">
+            <li>Paid once</li>
+            <li>No account</li>
+            <li>No subscription</li>
+            <li>Works offline</li>
+          </ul>
+        </div>
+        <div class="hero-visual" data-parallax="0.06">
+          <div class="shot">
+            <img src="assets/img/screenshots/dashboard.webp"
+                 srcset="assets/img/screenshots/dashboard-440.webp 440w, assets/img/screenshots/dashboard-660.webp 660w, assets/img/screenshots/dashboard.webp 880w"
+                 sizes="(max-width: 900px) 82vw, 340px"
+                 alt="Fillo screenshot: the Home dashboard showing a car’s running cost, recent fuel-ups, and upcoming reminders, with Philippine peso amounts." width="880" height="1907" fetchpriority="high">
+          </div>
+          <p class="hero-visual-caption">The Fillo Home screen, with sample data.</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#features" aria-hidden="true" tabindex="-1">↓</a>
+    </section>
+
+    <!-- ============================ COST AHEAD =========================== -->
+    <section class="section" id="features" aria-labelledby="cost-title">
+      <div class="wrap cost-grid">
+        <div class="reveal">
+          <p class="eyebrow">Cost Ahead</p>
+          <h2 id="cost-title">Your next 30, 90, and 365 days, priced.</h2>
+          <p class="lede">Cost Ahead adds up your reminders, renewals, and recurring costs from the records you already saved.</p>
+          <ul class="check-list">
+            <li><strong>Everything upcoming in one place.</strong> Maintenance, renewals, and recurring ownership costs.</li>
+            <li><strong>Month, quarter, and year ahead.</strong> Small costs stop adding up unseen.</li>
+            <li><strong>Estimates, labeled as estimates.</strong> Calculated from your own records, never guessed.</li>
+          </ul>
+
+          <figure class="accumulation">
+            <div class="accum-row">
+              <span class="accum-label">30 days</span>
+              <span class="accum-track"><span class="accum-fill" style="--w: 22%"></span></span>
+              <span class="accum-value">₱4,850</span>
+            </div>
+            <div class="accum-row">
+              <span class="accum-label">90 days</span>
+              <span class="accum-track"><span class="accum-fill" style="--w: 52%"></span></span>
+              <span class="accum-value">₱11,300</span>
+            </div>
+            <div class="accum-row">
+              <span class="accum-label">365 days</span>
+              <span class="accum-track"><span class="accum-fill" style="--w: 100%"></span></span>
+              <span class="accum-value">₱21,760</span>
+            </div>
+            <figcaption>Illustrative sample data, shown in Philippine pesos. The app works in your local currency. Totals come from the records you save. Fillo predicts nothing.</figcaption>
+          </figure>
+        </div>
+
+        <figure class="stop-shot reveal flush">
+          <div class="shot">
+            <img src="assets/img/screenshots/cost-ahead.webp" alt="Fillo screenshot: the Cost Ahead screen listing upcoming costs for the next 30, 90, and 365 days." width="880" height="1907" loading="lazy" decoding="async">
+          </div>
+          <figcaption class="shot-caption">The Cost Ahead screen, with sample data.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========================== VEHICLE PASSPORT ======================== -->
+    <section class="passport section" id="passport" aria-labelledby="passport-title">
+      <div class="passport-road" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-head centered passport-intro reveal">
+          <p class="eyebrow">Vehicle Passport</p>
+          <h2 id="passport-title">Your car’s whole history, one record.</h2>
+          <p class="lede">Every record you save builds a timeline for each car, ready to share when it matters.</p>
+        </div>
+
+        <div class="passport-stops">
+          <div class="stop reveal">
+            <div class="stop-marker" aria-hidden="true"><span>1</span></div>
+            <div class="stop-copy">
+              <h3>Vehicle details</h3>
+              <p>Make, model, year, plate, VIN. Unlimited cars, each with its own record.</p>
+            </div>
+          </div>
+
+          <div class="stop reverse reveal">
+            <div class="stop-marker" aria-hidden="true"><span>2</span></div>
+            <div class="stop-copy">
+              <h3>Fuel-ups and charging</h3>
+              <p>Log odometer, quantity, unit price, total cost, efficiency, and the station or provider, before you drive away.</p>
+            </div>
+            <figure class="stop-shot flush">
+              <div class="shot">
+                <img src="assets/img/screenshots/fuel-form.webp" alt="Fillo fuel-up entry form with odometer, quantity, unit price, and total cost fields." width="880" height="1907" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="shot-caption">The fuel-up form, with sample data.</figcaption>
+            </figure>
+          </div>
+
+          <div class="stop reveal">
+            <div class="stop-marker" aria-hidden="true"><span>3</span></div>
+            <div class="stop-copy">
+              <h3>Maintenance and expenses</h3>
+              <p>Repairs, insurance, registration, parking, tolls, financing. Running Cost shows what each car costs to operate.</p>
+            </div>
+          </div>
+
+          <div class="stop reverse reveal">
+            <div class="stop-marker" aria-hidden="true"><span>4</span></div>
+            <div class="stop-copy">
+              <h3>Reminders and odometer history</h3>
+              <p>Set reminders by date, odometer, or both. Whichever comes first makes the item due. Estimated dates are labeled.</p>
+            </div>
+            <figure class="stop-shot flush">
+              <div class="shot">
+                <img src="assets/img/screenshots/reminders.webp" alt="Fillo reminders screen showing date-based and odometer-based service reminders." width="880" height="1907" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="shot-caption">The reminders screen, with sample data.</figcaption>
+            </figure>
+          </div>
+
+          <div class="stop reveal">
+            <div class="stop-marker" aria-hidden="true"><span>5</span></div>
+            <div class="stop-copy">
+              <h3>Documents in Glovebox</h3>
+              <p>Registration, insurance, receipts, renewal dates. Attach photos, scans, or PDFs to the records they belong to.</p>
+            </div>
+            <figure class="stop-shot flush">
+              <div class="shot">
+                <img src="assets/img/screenshots/glovebox.webp" alt="Fillo Glovebox screen listing vehicle documents such as registration and insurance with renewal dates." width="880" height="1907" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="shot-caption">Glovebox, with sample data.</figcaption>
+            </figure>
+          </div>
+
+          <div class="stop reverse reveal">
+            <div class="stop-marker" aria-hidden="true"><span>6</span></div>
+            <div class="stop-copy">
+              <h3>The Vehicle Passport</h3>
+              <p>Create a private PDF for your mechanic, insurer, or buyer, straight from the record you already keep.</p>
+            </div>
+            <figure class="stop-shot flush">
+              <div class="shot">
+                <img src="assets/img/screenshots/vehicle-passport.webp" alt="Fillo Vehicle Passport screen summarizing a car’s ownership history." width="880" height="1907" loading="lazy" decoding="async">
+              </div>
+              <figcaption class="shot-caption">The Vehicle Passport screen, with sample data.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================== DEMO =============================== -->
+    <section class="demo section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap">
+        <div class="section-head centered reveal">
+          <p class="eyebrow">Interactive demo</p>
+          <h2 id="demo-title">Look around the Garage.</h2>
+          <p class="lede">Real Fillo screens, sample data. Switch views below. Nothing you tap here is saved or sent anywhere.</p>
+        </div>
+
+        <div class="demo-tabs" role="tablist" aria-label="Product screens">
+          <button class="demo-tab" role="tab" type="button" id="tab-cost" aria-controls="panel-cost" aria-selected="true">Cost Ahead</button>
+          <button class="demo-tab" role="tab" type="button" id="tab-reminders" aria-controls="panel-reminders" aria-selected="false" tabindex="-1">Reminders</button>
+          <button class="demo-tab" role="tab" type="button" id="tab-glovebox" aria-controls="panel-glovebox" aria-selected="false" tabindex="-1">Glovebox</button>
+          <button class="demo-tab" role="tab" type="button" id="tab-passport" aria-controls="panel-passport" aria-selected="false" tabindex="-1">Vehicle Passport</button>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="panel-cost" aria-labelledby="tab-cost">
+          <div class="shot">
+            <img src="assets/img/screenshots/cost-ahead.webp" alt="Fillo Cost Ahead screen listing upcoming maintenance, renewals, and recurring costs." width="880" height="1907" loading="lazy" decoding="async">
+          </div>
+          <p class="demo-caption">Upcoming costs for the next 30, 90, and 365 days, estimated from the records you already saved.</p>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="panel-reminders" aria-labelledby="tab-reminders">
+          <div class="shot">
+            <img src="assets/img/screenshots/reminders.webp" alt="Fillo reminders screen showing date-based and odometer-based reminders." width="880" height="1907" loading="lazy" decoding="async">
+          </div>
+          <p class="demo-caption">Set reminders by date, odometer, or both. Whichever comes first makes the item due.</p>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="panel-glovebox" aria-labelledby="tab-glovebox">
+          <div class="shot">
+            <img src="assets/img/screenshots/glovebox.webp" alt="Fillo Glovebox screen listing vehicle documents with renewal dates." width="880" height="1907" loading="lazy" decoding="async">
+          </div>
+          <p class="demo-caption">Registration, insurance, receipts, and renewal dates, with photos, scans, or PDFs attached.</p>
+        </div>
+
+        <div class="demo-panel" role="tabpanel" id="panel-passport" aria-labelledby="tab-passport">
+          <div class="shot">
+            <img src="assets/img/screenshots/vehicle-passport.webp" alt="Fillo Vehicle Passport screen summarizing a car’s ownership history." width="880" height="1907" loading="lazy" decoding="async">
+          </div>
+          <p class="demo-caption">Turn a car’s record into a private PDF for a mechanic, insurer, or buyer.</p>
+        </div>
+
+        <p class="demo-note">Everything here uses built-in sample data. The real app keeps your records on your iPhone only.</p>
+      </div>
+    </section>
+
+    <!-- ============================== PRIVACY ============================= -->
+    <section class="privacy-section section" id="privacy" aria-labelledby="privacy-title">
+      <div class="wrap">
+        <div class="section-head centered reveal">
+          <p class="eyebrow">Privacy</p>
+          <h2 id="privacy-title">Your records never touch a Fillo server.</h2>
+          <p class="lede">There are no Fillo servers. The app needs no account and no connection.</p>
+        </div>
+
+        <div class="privacy-grid">
+          <div class="privacy-card">
+            <span class="stat">No account</span>
+            <h3>No sign-in, ever</h3>
+            <p>Fillo has no account system. Install it, add your cars, and start recording.</p>
+          </div>
+          <div class="privacy-card">
+            <span class="stat">No subscription</span>
+            <h3>Paid once, fully unlocked</h3>
+            <p>One paid download includes every feature. No ads, no free tier, no in-app purchases.</p>
+          </div>
+          <div class="privacy-card">
+            <span class="stat">No trackers</span>
+            <h3>No analytics, no advertising</h3>
+            <p>There are no analytics or advertising SDKs in the app. Fillo sends nothing off your device.</p>
+          </div>
+          <div class="privacy-card">
+            <span class="stat">On-device</span>
+            <h3>Your records stay on your iPhone</h3>
+            <p>Your Garage lives in local storage. Data leaves only when you export or back it up yourself.</p>
+          </div>
+        </div>
+
+        <p class="privacy-footnote">Fillo works fully offline, for every core feature. Read the <a href="privacy.html">privacy policy</a> for the detail.</p>
+      </div>
+    </section>
+
+    <!-- ============================== PURCHASE ============================ -->
+    <section class="purchase section" id="get" aria-labelledby="get-title">
+      <div class="wrap">
+        <h2 id="get-title">Your car already has a story. Keep it in one place.</h2>
+        <p class="lede">A private, practical record of what your vehicle has cost, and what may be coming next.</p>
+
+        <ul class="purchase-pills">
+          <li>Paid upfront</li>
+          <li>No subscription</li>
+          <li>No account</li>
+        </ul>
+
+        <div class="purchase-actions">
+          <!-- PUBLISHING BLOCKER: this becomes a real App Store link when the
+               listing URL exists. Until then it is intentionally not a link,
+               so the site has no dead or deceptive CTA. -->
+          <span class="btn btn-pending"><svg class="cta-icon" aria-hidden="true" focusable="false" width="15" height="15"><use href="#icon-appstore"/></svg> Fillo on App Store <span class="at-launch-tag">At launch</span></span>
+        </div>
+        <p class="purchase-price">One-time purchase — price announced at launch</p>
+        <p class="purchase-soon">Fillo launches on the App Store for iPhone and iPad. This becomes a download link the moment the listing is live.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <a class="footer-brand" href="index.html">
+            <img src="assets/img/icon-48.png" alt="" width="26" height="26"> Fillo
+          </a>
+          <p class="footer-tagline">A private car expense tracker, made independently.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <ul>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="index.html#get"><svg class="cta-icon" aria-hidden="true" focusable="false" width="15" height="15"><use href="#icon-appstore"/></svg> Fillo on App Store</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-legal">
+        <span>© 2026 Fillo. All rights reserved.</span>
+        <span>Independently made.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

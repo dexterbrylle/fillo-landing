@@ -1,0 +1,5 @@
+# Dev tooling and local verification artifacts — never shipped
+tools/node_modules/
+verification/
+.impeccable/
+.DS_Store
