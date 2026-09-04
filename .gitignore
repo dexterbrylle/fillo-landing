@@ -3,3 +3,6 @@ tools/node_modules/
 verification/
 .impeccable/
 .DS_Store
+
+# Dev tooling (kept locally only)
+tools/
