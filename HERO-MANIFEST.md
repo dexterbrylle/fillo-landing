@@ -12,11 +12,12 @@ AI-generated imagery, stock photography, or third-party assets are used.
 | 3 | Soft blob (bottom left) | `.hero-blob.b2` | CSS radial shape | `0.22` | derived light green at 80% opacity |
 | 4 | Road line | `.hero-road` | CSS repeating-linear-gradient | `0.05` | dashed primary `#18715B` at 30% opacity; horizontal under the hero, continues as the vertical road in the Vehicle Passport section |
 | 5 | Copy block | `.hero-copy` | HTML | none (static) | eyebrow / headline / lede / CTAs / fact pills |
-| 6 | App screenshot | `.hero-visual .shot img` | `assets/img/screenshots/dashboard.webp` ← `app-store-assets/raw-screenshots/iphone/01-dashboard.png` | `0.06` | real Fillo Home screen with deterministic sample data; plain rounded frame, no simulated device chrome |
+| 6 | App screenshot | `.hero-visual .shot img` | `assets/img/screenshots/dashboard.webp` ← raw Fillo capture + Apple's official iPhone 17 Pro Max product bezel | `0.06` | real Fillo Home screen with deterministic sample data; no App Store headline/background artwork |
 
 ## Source assets
 
 - `../fillo/app-store-assets/raw-screenshots/iphone/01-dashboard.png` — 1320×2868 real simulator capture (see `app-store-assets/README.md` for the capture test).
+- Apple Design Resources — official iPhone 17 Pro Max portrait PNG, provided at build time through `FILLO_IPHONE_BEZEL_PATH` and not redistributed as a source asset.
 - Palette values from `fillo/App/Theme.swift` (`FilloTheme`).
 - Regenerate optimized versions with `tools/build-assets.sh` (cwebp, sips, playwright).
 

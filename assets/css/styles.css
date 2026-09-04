@@ -406,7 +406,7 @@ a { color: var(--primary-dark); text-underline-offset: 3px; }
   padding: 7px 14px;
 }
 
-/* Hero visual: plain framed screenshot — no simulated device chrome. */
+/* Hero visual: raw app capture inside Apple's official hardware bezel. */
 .hero-visual {
   position: relative;
   justify-self: center;
@@ -414,11 +414,10 @@ a { color: var(--primary-dark); text-underline-offset: 3px; }
 }
 .hero-visual .shot {
   position: relative;
-  border-radius: 34px;
-  border: 1px solid rgba(24, 113, 91, 0.18);
-  box-shadow: var(--card-shadow);
-  overflow: hidden;
-  background: #fff;
+  border: 0;
+  box-shadow: none;
+  overflow: visible;
+  background: transparent;
 }
 .hero-visual .shot img { width: 100%; }
 .hero-visual-caption {
@@ -447,11 +446,11 @@ a { color: var(--primary-dark); text-underline-offset: 3px; }
 /* Shot frame shared by all sections ---------------------------------------- */
 
 .shot {
-  border-radius: var(--radius);
-  border: 1px solid rgba(24, 113, 91, 0.16);
-  box-shadow: var(--card-shadow);
-  overflow: hidden;
-  background: #fff;
+  border-radius: 0;
+  border: 0;
+  box-shadow: none;
+  overflow: visible;
+  background: transparent;
 }
 .shot img { width: 100%; }
 

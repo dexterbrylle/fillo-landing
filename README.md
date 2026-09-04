@@ -8,10 +8,9 @@ tracker for iPhone and iPad. Three pages:
 - `support.html` — `/support` (FAQ + contact)
 - `privacy.html` — `/privacy` (policy generated from verified app behavior)
 
-The current paid-upfront and privacy copy follows
+The paid-upfront and privacy copy follows
 `../fillo/app-store-assets/APP_STORE_RELEASE_BLOCKERS.md` plus direct source and
-compiled-product inspection. The older product specification and metadata still
-need monetization reconciliation. Every site claim is tracked in
+compiled-product inspection. Every site claim is tracked in
 [CONTENT-AUDIT.md](CONTENT-AUDIT.md).
 
 ## Local preview
@@ -21,8 +20,28 @@ python3 -m http.server 8080
 # open http://localhost:8080
 ```
 
-No build step. Deploy by uploading the directory as-is (minus `tools/` and
-`verification/` if you prefer).
+The checked-in optimized assets make the site directly deployable. Deploy by
+uploading the directory as-is (minus `tools/` and `verification/` if you prefer).
+
+## Regenerating screenshots
+
+The landing page does **not** use the App Store marketing compositions. It takes
+the current raw iPhone captures from
+`../fillo/app-store-assets/raw-screenshots/iphone/`, places them directly inside
+Apple's official iPhone 17 Pro Max hardware bezel, and writes optimized WebP
+assets.
+
+Download the iPhone 17 Product Bezels kit from
+[Apple Design Resources](https://developer.apple.com/design/resources/), accept
+Apple's license, and mount the disk image. Then run:
+
+```sh
+FILLO_IPHONE_BEZEL_PATH='/path/to/iPhone 17 Pro Max - Deep Blue - Portrait.png' \
+  ./tools/build-assets.sh
+```
+
+The licensed source bezel is intentionally not committed. App Store listing
+artwork remains separately generated in `../fillo/app-store-assets/screenshots/`.
 
 ## GitHub Pages first deployment
 
@@ -37,13 +56,9 @@ This directory is ready for branch-based GitHub Pages hosting. The included
 5. Record the generated URL. A project site normally uses
    `https://<account>.github.io/<repository>/`; an account site uses
    `https://<account>.github.io/`.
-6. Before indexing the site, replace the temporary `https://fillo.com` canonical,
-   Open Graph, sitemap, and robots URLs with that exact GitHub Pages URL.
-7. Set Fillo's Release configuration URLs to the published `privacy.html` and
-   `support.html` pages, then open both from a real iPhone.
-
-The GitHub account/repository URL is intentionally not guessed. Add a `CNAME`
-file only when moving from the GitHub Pages URL to a confirmed custom domain.
+6. Confirm the custom domain `https://fillo.dexterbrylle.com/` resolves to the
+   published Pages site and that HTTPS enforcement is enabled.
+7. Open `/support` and `/privacy` from a real iPhone.
 
 ## Structure
 
@@ -53,11 +68,12 @@ robots.txt  sitemap.xml
 assets/
   css/styles.css        design tokens mirror fillo/App/Theme.swift
   js/main.js            progressive enhancement only (site works without JS)
-  img/screenshots/      real app screenshots, WebP (see tools/build-assets.sh)
+  img/screenshots/      raw captures in Apple's official iPhone bezel, WebP
   img/                  app icon, favicons, og-image.png
 tools/
   og.html               editable source for the social preview image
   build-assets.sh       regenerates all optimized assets from repo sources
+  frame-iphone-screenshots.swift  composites raw captures into Apple's bezel
   verify.js             browser verification (24 checks) via playwright
   package.json          dev tooling only — never shipped
 verification/           full-page screenshots at 320→1440 px
@@ -68,7 +84,7 @@ CONTENT-AUDIT.md        verified claims, placeholders, publishing blockers
 ## Publishing blockers
 
 See [CONTENT-AUDIT.md §3](CONTENT-AUDIT.md). Short version: App Store URL,
-owner review, GitHub Pages URL, price decision, and preview-host noindex. All
+owner review, price decision, and preview-host noindex. All
 swap points are marked `<!-- PUBLISHING BLOCKER -->` in the HTML.
 
 ## Accessibility & behavior notes
@@ -77,4 +93,5 @@ swap points are marked `<!-- PUBLISHING BLOCKER -->` in the HTML.
 - Honors `prefers-reduced-motion` (no parallax, no reveals, no bar animation).
 - Keyboard: skip link first, mobile menu Escape + focus return, demo tabs use
   roving tabindex with Arrow/Home/End keys.
-- No fake OS chrome, no fake email capture, no dead links, no placeholder URLs.
+- Official Apple hardware artwork is used for the device bezel; no fake email
+  capture, dead links, or policy/support placeholders remain.
